@@ -10,31 +10,36 @@
 
 html{
     font: normal 16px sans-serif;
-    color: #555;
 }
 
 body{
-    background-image: url(./images/fond\ bleu.png);
+    background-image: url(./images/numérique.jpg);
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-
+    width: 100vw;
 }
 
+h1{
+    border: 2px solid white;
+  
+}
 
 ul, nav{
     list-style: none;
 }
 
 a{
+    padding: 25px;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
     opacity: 0.9;
+    color: rgb(2, 211, 248);
 }
 a:hover{
     opacity: 1;
+    text-decoration:none!important;
+    font-style:italic;
 }
 
 /* Header */
@@ -48,7 +53,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
+    color: #ffffff;
     padding: 35px 100px 35px;
     background-color: #2C3032;
 }
@@ -79,5 +84,45 @@ header nav li{
         margin-bottom: 15px;
     }
 }
+
+
+/* Corps / divs */
+
+#descriptif, #profil, #compétences, #timeline, #portfolio, #contact{
+    background-color: #2c3032c2;
+    opacity: 1;
+    margin-top: 150px;
+    border: 2px solid #fff;
+}
+#descriptif{
+    height: 500px;
+}
+#profil{
+    height: 500px;
+}
+
+#compétences{
+    height: 300px;
+}
+
+#timeline{
+    height: 1000px;
+}
+
+#portfolio{
+    height: 300px;
+}
+
+#contact{
+    height: 400px;
+}
+
+/*
+
+#dll{
+    /* A mettre : Ancre externe pour dll CV en PDF **
+}
+
+/*
 
 
