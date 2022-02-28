@@ -1,0 +1,83 @@
+/* Général */
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Kelly+Slab&family=Luckiest+Guy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: normal 16px sans-serif;
+    color: #555;
+}
+
+body{
+    background-image: url(./images/fond\ bleu.png);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+ul, nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover{
+    opacity: 1;
+}
+
+/* Header */
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 35px;
+    background-color: #2C3032;
+}
+
+header h1{
+    font-family: 'Quicksand' , sans-serif;
+}
+
+header nav{
+    display: flex;
+}
+
+header nav li{
+    margin: 0 15px;
+}
+
+@media (max-width: 1000px){
+    header{
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+}
+
+
