@@ -11,7 +11,33 @@
 html{
     font: normal 16px sans-serif;
 }
-
+.Ancre {
+	box-shadow:inset 0px -6px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius: 42px;
+	border:2px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:10px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+    transition: 0.2s
+}
+.Ancre:active {
+	position:relative;
+	top:1px;
+}
+.Ancre:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+    box-shadow:inset 0px -2px 0px 0px #97c4fe;
+    transition: 0.2s;
+}
 body{
     background-image: url(./images/numérique.jpg);
     margin: 0;
@@ -36,11 +62,7 @@ a{
     opacity: 0.9;
     color: rgb(2, 211, 248);
 }
-a:hover{
-    opacity: 1;
-    text-decoration:none!important;
-    font-style:italic;
-}
+
 
 /* Header */
 
@@ -117,12 +139,28 @@ header nav li{
     height: 400px;
 }
 
-/*
 
-#dll{
-    /* A mettre : Ancre externe pour dll CV en PDF **
+/* Ancre retour en haut */
+
+.btn{
+    box-shadow:inset 0px -6px 0px 0px #97c4fe;
+    height: 80px;
+    width: 80px;
+    background: rgb(2, 211, 248);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    opacity: 0.8;
 }
-
-/*
-
-
+.btn:hover{
+    box-shadow:inset 0px -2px 0px 0px #97c4fe;
+}
+.icone{
+    width: 50px;
+}
+/* Fin Ancre */
