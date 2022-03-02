@@ -10,6 +10,7 @@
 
 html{
     font: normal 16px sans-serif;
+    overflow-x : hidden;
 }
 .Ancre {
 	box-shadow:inset 0px -6px 0px 0px #97c4fe;
@@ -108,33 +109,93 @@ header nav li{
 }
 
 
-/* Corps / divs */
+/* Principal */
 
 #descriptif, #profil, #compétences, #timeline, #portfolio, #contact{
     background-color: #2c3032c2;
     opacity: 1;
     margin-top: 150px;
-    border: 2px solid #fff;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
 }
+
+/* 1ère section */
 #descriptif{
     height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+#portrait{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: #484c4e;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img{
+    display: block;
+    max-width:100%;
+	max-height:100%;
+}
+#textDescriptif{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    background-color: #484c4e;
+    border: 5px solid #97c4fe;
+    border-radius: 10%;
+}
+.text1{
+    font-size:30px;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* 2ème section */
 #profil{
+    align-items: center;
+    display: flex;
     height: 500px;
 }
-
-#compétences{
-    height: 300px;
+.text2{
+    font-size:25px;
+    text-align: center;
+    color: white;
 }
 
+
+/* 3ème section */
+#compétences{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+.logo{
+    height: 200px;
+}
+
+
+
+/* 4ème section */
 #timeline{
     height: 1000px;
 }
 
+
+/* 5ème section */
 #portfolio{
     height: 300px;
 }
 
+
+/* 6ème section */
 #contact{
     height: 400px;
 }
@@ -164,3 +225,4 @@ header nav li{
     width: 50px;
 }
 /* Fin Ancre */
+
