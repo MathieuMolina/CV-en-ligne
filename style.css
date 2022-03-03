@@ -36,11 +36,22 @@ body{
 	font-family:Arial;
 	font-size:12px;
 	font-weight:bold;
-	padding:10px 20px;
+	padding: 10px 20px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #1570cd;
     transition: 0.2s
 }
+@media (min-width: 1200px){
+    .Ancre{
+        font-size: 18x;
+    }
+}
+@media (max-width: 450px){
+    .Ancre{
+        padding: 7px;
+    }
+}
+
 .Ancre:active {
 	position:relative;
 	top:1px;
@@ -48,21 +59,26 @@ body{
 .Ancre:hover {
 	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
 	background-color:#1e62d0;
+    color: white;
     box-shadow:inset 0px -2px 0px 0px #97c4fe;
     transition: 0.2s;
 }
-
+.row{
+    margin: 0;
+}
+.row > *{
+    padding: 0;
+}
 h1{
     border: 2px solid white;
-  
+    text-align: center;
 }
-
 ul, nav{
     list-style: none;
+    padding: 0;
 }
 
 a{
-    padding: 25px;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
@@ -74,16 +90,12 @@ a{
 /* Header */
 
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 100;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
-    padding: 35px 100px 35px;
     background-color: #2C3032;
 }
 
@@ -93,16 +105,6 @@ header h1{
 
 header nav{
     display: flex;
-}
-
-header nav li{
-    margin: 0 15px;
-}
-
-@media (max-width: 1000px){
-    header{
-        padding: 20px 50px;
-    }
 }
 
 @media (max-width: 700px){
@@ -127,13 +129,14 @@ header nav li{
 
 /* 1ère section */
 #descriptif{
-    height: 500px;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 #portrait{
+    margin: 100px;
     position: relative;
     width: 300px;
     height: 350px;
@@ -149,11 +152,7 @@ img{
 #textDescriptif{
     display: flex;
     align-items: center;
-    width: 700px;
-    height: 400px;
-    background-color: #484c4e;
-    border: 5px solid #97c4fe;
-    border-radius: 10%;
+    margin: 100px;
 }
 .text1{
     font-size:30px;
@@ -167,9 +166,10 @@ img{
 #profil{
     align-items: center;
     display: flex;
-    height: 500px;
+
 }
 .text2{
+    margin: 100px;
     font-size:25px;
     text-align: center;
     color: white;
@@ -181,10 +181,10 @@ img{
     align-items: center;
     display: flex;
     justify-content: space-around;
-    height: 300px;
 }
 .logo{
-    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -240,18 +240,83 @@ img{
     top: 3560px;
 }
 
+.box{
+    color: #333;
+    width: 400px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 3px;
+    height: auto;
+    background: #f1f1f1;
+    box-shadow: 0 10px 15px black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.b1{
+    top: 2000px;
+    left: calc(50% - 270px);
+}
+.b2{
+    top: 2400px;
+    left: calc(50% + 270px);
+}
+.b3{
+    top: 2800px;
+    left: calc(50% - 270px);
+}
+.b4{
+    top: 3150px;
+    left: calc(50% + 270px);
+}
+.b5{
+    top: 3500px;
+    left: calc(50% - 270px);
+}
+
+.box p{
+    line-height: 20px;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+}
+
+.btnT{
+    display: block;
+    background: #1e62d0;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
 
 
+@media screen and (max-width: 1000px){    /* Ne fonctionne pas ! */
+
+    .ligne{
+        position: relative;
+        left: 0px;
+    }
+    .rond {
+        left: calc(50% +0%);
+    }
+    .box{
+        left: calc(50% -0px);
+    }
+}
 
 /* 5ème section */
 #portfolio{
-    height: 300px;
+    height: 300px; /*A supprimer à la fin pour le responsive*/
 }
 
 
 /* 6ème section */
 #contact{
-    height: 400px;
+    height: 400px; /*A supprimer à la fin pour le responsive*/
 }
 
 
