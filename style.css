@@ -7,11 +7,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+*, ::before, ::after{
+    border-style: border-box;
+    margin: 0;
+    padding: 0;
+}
 html{
     font: normal 16px sans-serif;
     overflow-x : hidden;
 }
+body{
+    background-color: #1570cd;
+    background-image: url(./images/numérique.jpg);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
 .Ancre {
 	box-shadow:inset 0px -6px 0px 0px #97c4fe;
 	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
@@ -38,13 +50,6 @@ html{
 	background-color:#1e62d0;
     box-shadow:inset 0px -2px 0px 0px #97c4fe;
     transition: 0.2s;
-}
-body{
-    background-color: #1570cd;
-    background-image: url(./images/numérique.jpg);
-    margin: 0;
-    padding: 0;
-    width: 100vw;
 }
 
 h1{
@@ -186,8 +191,56 @@ img{
 
 /* 4ème section */
 #timeline{
-    height: 2000px;
+    height: 2500px;
 }
+.box-timeline{
+    width: 100%;
+    height: 1500pw;
+    background: #f1f1f1;
+    position: relarive;
+    padding: 80px 0 250px 0;
+    margin-bottom: 100px;
+}
+.ligne{
+    height: 1500px;
+    width: 10px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background: #1e62d0;
+}
+.rond{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background: #1e62d0;
+    opacity: 0.9;
+    position: absolute;
+    border: 1px solid black;
+    left: 50.45%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.r1{
+    top: 2058px;
+}
+.r2{
+    top:2458px;
+}
+.r3{
+    top: 2858px;
+}
+.r4{
+    top: 3200px;
+}
+.r5{
+    top: 3560px;
+}
+
+
 
 
 /* 5ème section */
