@@ -129,20 +129,15 @@ header nav{
 
 /* 1ère section */
 #descriptif{
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 #portrait{
-    margin: 100px;
     position: relative;
-    width: 300px;
-    height: 350px;
     background-color: #484c4e;
     border-radius: 50%;
-    overflow: hidden;
 }
 img{
     display: block;
@@ -152,7 +147,7 @@ img{
 #textDescriptif{
     display: flex;
     align-items: center;
-    margin: 100px;
+
 }
 .text1{
     font-size:30px;
@@ -169,7 +164,7 @@ img{
 
 }
 .text2{
-    margin: 100px;
+    margin: 50px;
     font-size:25px;
     text-align: center;
     color: white;
@@ -190,9 +185,10 @@ img{
 
 
 /* 4ème section */
-#timeline{
+/* #timeline{
     height: 2500px;
-}
+}  */
+/* 
 .box-timeline{
     width: 100%;
     height: 1500pw;
@@ -206,14 +202,13 @@ img{
     width: 10px;
     margin: 0 auto;
     margin-top: 200px;
-    background: #1e62d0;
+    background: white;
 }
 .rond{
     width: 80px;
     height: 80px;
     border-radius: 50px;
-    background: #1e62d0;
-    opacity: 0.9;
+    background: white;
     position: absolute;
     border: 1px solid black;
     left: 50.45%;
@@ -225,19 +220,19 @@ img{
 }
 
 .r1{
-    top: 2058px;
+    top: 2258px;
 }
 .r2{
-    top:2458px;
+    top:2658px;
 }
 .r3{
-    top: 2858px;
+    top: 3058px;
 }
 .r4{
-    top: 3200px;
+    top: 3400px;
 }
 .r5{
-    top: 3560px;
+    top: 3760px;
 }
 
 .box{
@@ -255,23 +250,23 @@ img{
 }
 
 .b1{
-    top: 2000px;
+    top: 2150px;
     left: calc(50% - 270px);
 }
 .b2{
-    top: 2400px;
+    top: 2550px;
     left: calc(50% + 270px);
 }
 .b3{
-    top: 2800px;
+    top: 2950px;
     left: calc(50% - 270px);
 }
 .b4{
-    top: 3150px;
+    top: 3300px;
     left: calc(50% + 270px);
 }
 .b5{
-    top: 3500px;
+    top: 3650px;
     left: calc(50% - 270px);
 }
 
@@ -295,33 +290,33 @@ img{
 
 
 @media screen and (max-width: 1000px){    /* Ne fonctionne pas ! */
-
+/* 
     .ligne{
         position: relative;
-        left: 0px;
     }
     .rond {
-        left: calc(50% +0%);
+        left: calc(50%);
     }
     .box{
-        left: calc(50% -0px);
+        left: calc(50%);
     }
-}
+} */
 
 /* 5ème section */
-#portfolio{
+/* #portfolio{
     height: 300px; /*A supprimer à la fin pour le responsive*/
-}
+/* } */
 
 
 /* 6ème section */
-#contact{
+/* #contact{
     height: 400px; /*A supprimer à la fin pour le responsive*/
-}
+/* }  */
+*/
 
 
 /* Ancre retour en haut */
-
+/* 
 .btn{
     box-shadow:inset 0px -6px 0px 0px #97c4fe;
     height: 80px;
@@ -342,6 +337,6 @@ img{
 }
 .icone{
     width: 50px;
-}
+} */
 /* Fin Ancre */
 
