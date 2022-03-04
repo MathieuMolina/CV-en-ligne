@@ -73,6 +73,7 @@ h1{
     border: 2px solid white;
     text-align: center;
 }
+
 ul, nav{
     list-style: none;
     padding: 0;
@@ -111,11 +112,17 @@ header nav{
     header{
         flex-direction: column;
     }
-    header h2{
+    header h3{
         margin-bottom: 15px;
     }
 }
 
+.soustitre{
+    font-size: 30px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
 
 /* Principal */
 
@@ -165,7 +172,7 @@ img{
 }
 .text2{
     margin: 50px;
-    font-size:25px;
+    font-size:18px;
     text-align: center;
     color: white;
 }
@@ -187,8 +194,8 @@ img{
 /* 4ème section */
 /* #timeline{
     height: 2500px;
-}  */
-/* 
+} 
+
 .box-timeline{
     width: 100%;
     height: 1500pw;
@@ -286,11 +293,11 @@ img{
     text-decoration: none;
     border-radius: 3px;
     margin-top: 10px;
-}
+} */
 
 
-@media screen and (max-width: 1000px){    /* Ne fonctionne pas ! */
-/* 
+/* @media screen and (max-width: 1000px){
+
     .ligne{
         position: relative;
     }
@@ -303,7 +310,7 @@ img{
 } */
 
 /* 5ème section */
-/* #portfolio{
+ /* #portfolio{
     height: 300px; /*A supprimer à la fin pour le responsive*/
 /* } */
 
@@ -311,12 +318,12 @@ img{
 /* 6ème section */
 /* #contact{
     height: 400px; /*A supprimer à la fin pour le responsive*/
-/* }  */
-*/
+/* } */
+
 
 
 /* Ancre retour en haut */
-/* 
+/*
 .btn{
     box-shadow:inset 0px -6px 0px 0px #97c4fe;
     height: 80px;
