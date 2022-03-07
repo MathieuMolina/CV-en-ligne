@@ -1,4 +1,4 @@
-                                            // ANIMATIONS TIMELINE 
+                         // ANIMATIONS TIMELINE 
 
 const allRonds = document.querySelectorAll('.rond');
 const allBoxes = document.querySelectorAll('.box');
@@ -25,14 +25,14 @@ allBoxes.forEach(box => {
     }
 })
 
-                                                // FONCTION POUR ANCRE RETOUR EN HAUT
+                              // FONCTION POUR ANCRE RETOUR EN HAUT
 function backToTop(){
     const btn = document.querySelector('.btn');
     btn.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
             left: 0,
-            behavior: "smooth"
+            behavior: "smooth",
         });
     });
 }

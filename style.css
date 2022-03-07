@@ -135,19 +135,20 @@ header nav{
 }
 
 /* 1ère section */
-#descriptif{
+/* #descriptif{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+} */
 
 #portrait{
-    position: relative;
-    background-color: #484c4e;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 img{
-    display: block;
     max-width:100%;
 	max-height:100%;
 }
@@ -167,8 +168,6 @@ img{
 /* 2ème section */
 #profil{
     align-items: center;
-    display: flex;
-
 }
 .text2{
     margin: 50px;
@@ -187,13 +186,14 @@ img{
 .logo{
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 30px;
 }
 
 
 
 /* 4ème section */
-/* #timeline{
-    height: 2500px;
+#timeline{
+    padding: 1px;
 } 
 
 .box-timeline{
@@ -293,37 +293,25 @@ img{
     text-decoration: none;
     border-radius: 3px;
     margin-top: 10px;
-} */
+}
 
 
-/* @media screen and (max-width: 1000px){
 
-    .ligne{
-        position: relative;
-    }
-    .rond {
-        left: calc(50%);
-    }
-    .box{
-        left: calc(50%);
-    }
-} */
-
-/* 5ème section */
- /* #portfolio{
+/*5ème section*/
+#portfolio{
     height: 300px; /*A supprimer à la fin pour le responsive*/
-/* } */
+}
 
 
-/* 6ème section */
-/* #contact{
+/*6ème section*/
+#contact{
     height: 400px; /*A supprimer à la fin pour le responsive*/
-/* } */
+}
 
 
 
 /* Ancre retour en haut */
-/*
+
 .btn{
     box-shadow:inset 0px -6px 0px 0px #97c4fe;
     height: 80px;
@@ -344,6 +332,5 @@ img{
 }
 .icone{
     width: 50px;
-} */
+}
 /* Fin Ancre */
-
