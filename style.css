@@ -135,11 +135,6 @@ header nav{
 }
 
 /* 1ère section */
-/* #descriptif{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
 
 #portrait{
     border-radius: 50%;
@@ -170,6 +165,8 @@ img{
     align-items: center;
 }
 .text2{
+    text-align: center;
+    text-align: justify;
     margin: 50px;
     font-size:18px;
     text-align: center;
@@ -189,6 +186,11 @@ img{
     padding: 30px;
 }
 
+@media (max-width: 1000px){
+    .logo{
+        padding: 0;
+    }
+}
 
 
 /* 4ème section */
@@ -223,11 +225,36 @@ img{
     align-items: center;
     font-size: 40px;
 }
-/* 1000 - 160 + 80 / 3 =~ 306 */
-.r1{top: 230px;}
-.r2{top: 536px;}
-.r3{top: 862px;}
-.r4{top: 1170px;}
+/* LOGO redimension */
+.forklift{
+    height: 80%;
+    width: 80%;
+}
+.technique{
+    height: 80%;
+    width: 80%;
+}
+.codage{
+    height: 80%;
+    width: 80%;
+}
+.etudiant{
+    height: 80%;
+    width: 80%;
+}
+
+.r1{
+    top: 230px;
+}
+.r2{
+    top: 536px;
+}
+.r3{
+    top: 862px;
+}
+.r4{
+    top: 1170px;
+}
 
 .box {
     color: #333;
@@ -244,7 +271,7 @@ img{
 }
 
 .b1 {
-    top: 150px;
+    top: 100px;
     left: calc(50% - 270px);
 }
 .b2 {
@@ -252,11 +279,11 @@ img{
     left: calc(50% + 270px);
 }
 .b3 {
-    top: 770px;
+    top: 750px;
     left: calc(50% - 270px);
 }
 .b4 {
-    top: 1100px;
+    top: 1050px;
     left: calc(50% + 270px);
 }
 
@@ -265,6 +292,7 @@ img{
     font-size: 18px;
     margin: 10px 0 20px 0;
 }
+
 .btn {
     display: block;
     background: midnightblue;
@@ -281,19 +309,78 @@ img{
 
     .ligne {
         position: relative;
-        left: 200px;
+        left: 0px;
     }
     .rond {
-        left: calc(50% + 0px);
+        display: none;
     }
     .box {
-        left: calc(50% - 0px)
+        left: calc(50% - 0px);
+        width: 230px;
+    }
+    .box-timeline{
+        height: 1605px;
+    }
+    .b1 {
+        top: 0px;
+    }
+    .b2 {
+        top: 430px;
+    }
+    .b3 {
+        top: 730px;
+    }
+    .b4 {
+        top: 1150px;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .ligne {
+        height: 1200px;
+    }
+    .rond {
+        display: none;
+    }
+    .box {
+        left: calc(50% - 0px);
+        width: 400px;
+    }
+    .b1 {
+        top: 40px;
+    }
+    .b2 {
+        top: 440px;
+    }
+    .b3 {
+        top: 840px;
+    }
+    .b4 {
+        top: 1240px;
+    }
+}
 
-
-
+@media screen and (max-width: 320px) {
+    .rond {
+        display: none;
+    }
+    .box {
+        left: calc(50% - 0px);
+        width: 300px;
+    }
+    .b1 {
+        top: 20px;
+    }
+    .b2 {
+        top: 440px;
+    }
+    .b3 {
+        top: 800px;
+    }
+    .b4 {
+        top: 1200px;
+    }
+}
 /*5ème section*/
 #portfolio{
     height: 300px; /*A supprimer à la fin pour le responsive*/
@@ -323,6 +410,7 @@ img{
     bottom: 20px;
     cursor: pointer;
     opacity: 0.8;
+    z-index: 999;
 }
 .btn:hover{
     box-shadow:inset 0px -2px 0px 0px #97c4fe;
