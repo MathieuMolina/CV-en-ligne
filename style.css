@@ -144,8 +144,8 @@ header nav{
     padding: 50px;
 }
 img{
-    max-width:100%;
-	max-height:100%;
+    max-width:70%;
+	max-height:70%;
 }
 #textDescriptif{
     display: flex;
@@ -360,7 +360,13 @@ img{
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
+    .ligne{
+        height: 970px;
+    }
+    .box-timeline{
+        height:1360px;
+    }
     .rond {
         display: none;
     }
@@ -372,13 +378,13 @@ img{
         top: 20px;
     }
     .b2 {
-        top: 440px;
+        top: 360px;
     }
     .b3 {
-        top: 800px;
+        top: 620px;
     }
     .b4 {
-        top: 1200px;
+        top: 970px;
     }
 }
 /*5ème section*/
@@ -418,4 +424,3 @@ img{
 .icone{
     width: 50px;
 }
-/* Fin Ancre */
