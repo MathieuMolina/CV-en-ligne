@@ -29,7 +29,7 @@ allBoxes.forEach(box => {
 
                               // FONCTION POUR ANCRE RETOUR EN HAUT
 function backToTop(){
-    const btn = document.querySelector('.btn');
+    const btn = document.querySelector('.btnAncre');
     btn.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
